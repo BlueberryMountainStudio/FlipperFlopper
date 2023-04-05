@@ -1,2 +1,1 @@
-# Flipper Flopper
-by Blueberry Mountain Games
+# PenguinParty
