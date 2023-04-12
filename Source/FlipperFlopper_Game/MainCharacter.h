@@ -21,8 +21,6 @@ protected:
 
 public:	
 
-	UFUNCTION(BlueprintCallable)
-		virtual void ResetJumpState() override;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
