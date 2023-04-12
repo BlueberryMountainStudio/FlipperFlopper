@@ -14,7 +14,7 @@ class FLIPPERFLOPPER_GAME_API AMainCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, Category = "GameDesign")
 		float JumpEndDownwardVelocity = 0;
 
 protected:
