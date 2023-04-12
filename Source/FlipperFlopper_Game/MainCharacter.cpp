@@ -2,6 +2,7 @@
 
 
 #include "MainCharacter.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -18,9 +19,10 @@ void AMainCharacter::BeginPlay()
 	
 }
 
-void AMainCharacter::ResetJumpState()
+void AMainCharacter::StopJumping()
 {
-	Super::ResetJumpState();
+	GetCharacterMovement()->Velocity.Z = -FMath::Abs(GetCharacterMovement()->Velocity.Z);
+	Super::StopJumping();
 }
 
 // Called every frame

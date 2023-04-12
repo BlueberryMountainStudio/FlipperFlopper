@@ -20,7 +20,7 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-
+	virtual void StopJumping() override;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
