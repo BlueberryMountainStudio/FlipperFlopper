@@ -14,6 +14,8 @@ class FLIPPERFLOPPER_GAME_API AMainCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
+	UPROPERTY(EditAnywhere, Category = "GameDesign")
+		float JumpEndDownwardVelocity = 0;
 
 protected:
 	// Called when the game starts or when spawned

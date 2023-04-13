@@ -21,8 +21,8 @@ void AMainCharacter::BeginPlay()
 
 void AMainCharacter::StopJumping()
 {
-	GetCharacterMovement()->Velocity.Z = -FMath::Abs(GetCharacterMovement()->Velocity.Z);
 	Super::StopJumping();
+	GetCharacterMovement()->Velocity.Z = JumpEndDownwardVelocity;
 }
 
 // Called every frame
