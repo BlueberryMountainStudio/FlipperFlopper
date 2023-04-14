@@ -22,6 +22,7 @@ void AMainCharacter::BeginPlay()
 void AMainCharacter::StopJumping()
 {
 	Super::StopJumping();
+	if(GetCharacterMovement()->Velocity.Z >= JumpEndDownwardVelocity)
 	GetCharacterMovement()->Velocity.Z = JumpEndDownwardVelocity;
 }
 
